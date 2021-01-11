@@ -1,6 +1,13 @@
 .output{
     display:flex;
     flex-flow:column;
+    width:500px;
+    height:200px;
+    margin:0 auto;
+    background-color:lightpink;
+    
+    border-radius:0 0 1rem 1rem;
+    
     
 }
 .output > div{
@@ -10,6 +17,8 @@
     height:25px;
     text-align: center;
     border-radius: 1rem;
+    align-items: center;
+    
 
 }
 .input{
@@ -44,22 +53,40 @@ height:25px;
     border-radius: 0.5rem;
     background-color: lightcoral;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-
+    cursor:pointer;
 }
 #button:active{
     transform:translateY(4px);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 
+
+
+}
+
+.container{
+    background-color: black;
+    width:500px;
+    margin:0 auto;
+    border-radius: 1rem 1rem 1rem 1rem;
+    
 }
 
 @keyframes left1{
     0%{
         transform:translateX(-25vw);
-       opacity:1;  
+       opacity:0;  
     }
+    50%{
+        
+        opacity:0;  
+     }
+     60%{
+         
+        opacity:0;  
+     }
     
     100%{
-        transform:translateX(42vw);
+        transform:translateX(135px);
         opacity:1;
     }
 
@@ -68,23 +95,32 @@ height:25px;
 
 @keyframes right1{
     0%{
-        transform:translateX(100vw);
-       opacity:1;  
+        transform:translateX(50vw);
+       opacity:0;  
+    }
+    50%{
+        
+       opacity:0;  
+    }
+    60%{
+        
+       opacity:0;  
     }
     
     100%{
-        transform:translateX(434px);
+        transform:translateX(-5px);
         opacity:1;
     }
 
 
 }
 .output_block:nth-child(odd) {
- 
+    
     animation:left1 2s ease normal;
     animation-fill-mode: forwards;
     position:relative;
     left:-70px;
+    padding-top: 5px;
 
 }
 .output_block:nth-child(even) {
@@ -93,5 +129,34 @@ height:25px;
     animation-fill-mode: forwards;
     position:relative;
     right:-70px;
+    padding-top: 5px;
 
+
+}
+.circle1{
+    position:absolute;
+    top:150px;
+    left:-40px;
+    width:100px;
+    height:100px;
+    border-radius: 4rem;
+    background-color:lightpink;
+}
+.circle2{
+    position:absolute;
+    top:100px;
+    right:-40px;
+    width:100px;
+    height:100px;
+    border-radius: 50% 10% 0% 0% ;
+    background-color:lightpink;
+}
+.circle3{
+    position:absolute;
+    top:120px;
+    right:200px;
+    width:100px;
+    height:100px;
+    border-radius: 5rem ;
+    background-color:lightpink;
 }
