@@ -37,12 +37,13 @@ function clickhandle(){
             }
             new1=parseInt(ret1/max);
             new2=parseInt(ret1%max);
-            html+="<div>"+max+"*"+new1+"</div>";
+            html+="<div class=output_block>"+max+" X "+new1+"</div>";
             console.log(max +"*"+new1);
             if(new2>0){
                 recr(new2);
             }
             else{
+                
                 output.innerHTML=html;
                 console.log("returning"+ret);
                 
