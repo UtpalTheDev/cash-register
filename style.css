@@ -1,3 +1,6 @@
+.body{
+    font-family: sans-serif;
+}
 .output{
     display:flex;
     flex-flow:column;
@@ -33,6 +36,7 @@
     background-color:lightblue;
     text-align: center;
     height:25px;
+    outline:none;
 
 }
 .input2{
@@ -43,6 +47,7 @@ border:none;
 background-color:lightblue;
 text-align: center;
 height:25px;
+outline:none;
 }
 #button{
     margin:0.5rem;
@@ -54,6 +59,7 @@ height:25px;
     background-color: lightcoral;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     cursor:pointer;
+    outline:none;
 }
 #button:active{
     transform:translateY(4px);
@@ -116,20 +122,24 @@ height:25px;
 }
 .output_block:nth-child(odd) {
     
-    animation:left1 2s ease normal;
+    animation:left1 0.8s ease normal;
     animation-fill-mode: forwards;
     position:relative;
     left:-70px;
     padding-top: 5px;
+    font-family: sans-serif;
+
+
 
 }
 .output_block:nth-child(even) {
    
-    animation:right1 2s ease normal;
+    animation:right1 0.8s ease normal;
     animation-fill-mode: forwards;
     position:relative;
     right:-70px;
     padding-top: 5px;
+    font-family: sans-serif;
 
 
 }
