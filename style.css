@@ -2,12 +2,16 @@ body{
     font-family: sans-serif;
     background-image: linear-gradient(to right top, #3700d3, #1a1bbe, #0023a8, #002790, #002778, #1f2163, #251c4e, #25183c, #25122a, #1f0d1b, #16060e, #000000);
     background-repeat: no-repeat;
-    
-    width:99vw;
-    min-height:650px;
+    height:200vw;
     overflow:hidden;
+  
 
 
+}
+.bodywraper{
+  /*  width:99vw;
+    height:650px;*/
+   /* overflow:hidden;*/
 }
 .header{
     color:white;
@@ -158,20 +162,21 @@ outline:none;
     }
     
     100%{
-        transform:translate(1450px,650px) scale(0.8,0.8);
+        transform:translate(80vw,30vw) ;
         opacity:0.5;
         background-color: black;
     } 
 }
+
 .circle{
     position:absolute;
     background-color: black;
     z-index:-1;
-    width:1500px;
-    height:1500px;
+    width:90vw;
+    height:100vw;
     top:-500px;
     left:-500px;
-    border-radius:50rem;
+    border-radius:50vw;
     animation:circle 5s ease normal;
     animation-fill-mode: forwards;
 }
