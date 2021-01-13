@@ -2,22 +2,28 @@ var input1=document.querySelector("#input1");
 var input2=document.querySelector("#input2");
 var button=document.querySelector("#button");
 var output=document.querySelector("#output");
+var gif=document.querySelector("#gif");
 
 button.addEventListener("click",clickhandle);
 
 function clickhandle(){
     var due=parseInt(input1.value);
+    
     var html="";
     if(due>=1){
         console.log(due);
         var receive=parseInt(input2.value);
         console.log(receive);
-        if(due >= receive)
+        if(due > receive)
         {
          //var receive=parseInt(read.question("receiving\n"));
-           // alert("You are giving lesser money than the due amount");
+           alert("You are giving lesser money than the due amount");
             console.log("less");
             
+        }
+        else if(due===receive){
+            html="<div class=output_block>"+"No return"+"</div>";
+            output.innerHTML=html;
         }
         else
         {
@@ -46,6 +52,7 @@ function clickhandle(){
                 
                 output.innerHTML=html;
                 console.log("returning"+ret);
+                setTimeout(giphy,1000);
                 
             }
             
@@ -62,3 +69,8 @@ function clickhandle(){
     console.log("no due no return")
     }
 }   
+function giphy(){
+    var setter="<div>"+"</div>";
+    gif.innerHTML="<img src='cashier.gif'>"
+    setTimeout(()=>{gif.innerHTML=setter},4500);
+}
