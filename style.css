@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     
     width:99vw;
-    height:650px;
+    min-height:650px;
     overflow:hidden;
 
 
@@ -19,7 +19,7 @@ body{
 .output{
     display:flex;
     flex-flow:column;
-    width:500px;
+    width:450px;
     height:200px;
     margin:0 auto;
    
@@ -43,6 +43,7 @@ body{
 .input{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
   
 }
 .input1{
@@ -87,7 +88,7 @@ outline:none;
 
 .container{
   
-    width:500px;
+    width:450px;
     height:250px;
     margin:0 auto;
     border-radius: 1rem 1rem 1rem 1rem;
@@ -182,6 +183,8 @@ outline:none;
     left:-70px;
     padding-top: 5px;
     font-family: sans-serif;
+   
+    
 
 
 
@@ -194,6 +197,7 @@ outline:none;
     right:-70px;
     padding-top: 5px;
     font-family: sans-serif;
+   
 
 
 }
