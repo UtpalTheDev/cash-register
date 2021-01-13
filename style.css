@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
     background-image: linear-gradient(to right top, #3700d3, #1a1bbe, #0023a8, #002790, #002778, #1f2163, #251c4e, #25183c, #25122a, #1f0d1b, #16060e, #000000);
     background-repeat: no-repeat;
-    height:200vw;
+   height:200vw;
     overflow:hidden;
   
 
@@ -162,7 +162,7 @@ outline:none;
     }
     
     100%{
-        transform:translate(80vw,30vw) ;
+        transform:translate(120vw,60vw) ;
         opacity:0.5;
         background-color: black;
     } 
@@ -172,12 +172,12 @@ outline:none;
     position:absolute;
     background-color: black;
     z-index:-1;
-    width:90vw;
-    height:100vw;
-    top:-500px;
-    left:-500px;
-    border-radius:50vw;
-    animation:circle 5s ease normal;
+    width:120vw;
+    height:120vw;
+    top:-50vw;
+    left:-50vw;
+    border-radius:60vw;
+    animation:circle 3s ease normal;
     animation-fill-mode: forwards;
 }
 .output_block:nth-child(odd) {
