@@ -17,7 +17,7 @@ function clickhandle(){
         if(due > receive)
         {
          //var receive=parseInt(read.question("receiving\n"));
-           alert("You are giving lesser money than the due amount");
+           alert(`Insufficient cash!Pay another ₹${due-receive}`);
             console.log("less");
             
         }
