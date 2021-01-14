@@ -10,9 +10,9 @@ body{
 
 }
 .bodywraper{
-  /*  width:99vw;
-    height:650px;*/
-   overflow:hidden;
+  /* width:100vw;
+    height:650px;
+   overflow:hidden;*/
 }
 .header{
     color:white;
@@ -236,25 +236,8 @@ body{
     margin:0 auto;
 }
 @media only screen and (max-width:550px){
-    @keyframes circle{
-        0%{
-            transform:translate(-90vw,-80vh) scale(3) ;
-           opacity:1;  
-        }
-        50%{
-            
-           opacity:0.8;  
-        }
-        60%{
-            
-           opacity:0.8; 
-            
-        }
-        
-        100%{
-            transform:translate(80vw,100vh) ;
-            opacity:0;
-            background-color: black;
-        } 
+    .circle{
+        animation:none;
+        opacity:0.5;    
     }
 }
