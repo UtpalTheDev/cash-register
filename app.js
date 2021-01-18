@@ -52,7 +52,7 @@ function clickhandle(){
                 
                 output.innerHTML=html;
                 console.log("returning"+ret);
-                setTimeout(giphy,1000);
+                //setTimeout(giphy,1000);
                 
             }
             
@@ -68,9 +68,10 @@ function clickhandle(){
     else{
     console.log("no due no return")
     }
-}   
+} 
+/*  
 function giphy(){
     var setter="<div>"+"</div>";
     gif.innerHTML="<img src='cashier.gif'>"
     setTimeout(()=>{gif.innerHTML=setter},4500);
-}
+}*/
